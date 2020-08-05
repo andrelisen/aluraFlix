@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-//Forma fácil de criar um filho de um componente
+// Forma fácil de criar um filho de um componente
 const Button = styled.button`
     color: var(--white);
     border: 1px solid var(--white);
+    background: var(--black);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;

@@ -5,15 +5,18 @@ import './Menu.css';
 //import ButtonLink from './components/ButtonLink';
 import Button from '../Button';
 
+//Para poder usar SPA 
+import { Link } from 'react-router-dom';
+
 //Todo o componente precisa ser iniciado com maiúsculo
 function Menu(){
     return(
         <nav className="Menu"> 
-            <a href="/"> 
+            <Link to="/"> 
                 <img className="Logo" src={Logo} alt="Logo AluraFlix"/> 
-            </a>
+            </Link>
         
-            <Button as="a" className="ButtonLink" href="/">
+            <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 Novo vídeo
             </Button>
 
